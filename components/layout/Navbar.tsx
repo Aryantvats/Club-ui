@@ -7,16 +7,16 @@ export default function Navbar() {
         
         {/* Left: Logo (flush left) */}
         <div className="pl-6 leading-tight">
-          <h1 className="text-lg font-bold tracking-wide">
+          <h1 className="text-[24px] font-bold tracking-wide">
             DHRUVA
           </h1>
-          <p className="text-xs text-gray-300 tracking-widest">
+          <p className="text-[12px]  tracking-widest">
             ASTRONOMY CLUB
           </p>
         </div>
 
         {/* Right: Links (flush right) */}
-        <div className="pr-6 hidden md:flex items-center gap-8 text-sm font-medium tracking-wide">
+        <div className="pr-6 hidden md:flex items-center gap-8 text-[20px] font-medium tracking-wide">
           <Link href="/" >
             HOME
           </Link>

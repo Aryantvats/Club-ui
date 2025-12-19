@@ -40,10 +40,6 @@ const TeamLeaders = () => {
         ))}
       </div>
 
-      {/* Quote */}
-      <p className="mt-24 uppercase text-center text-lg font-extrabold tracking-wide text-white mx-auto">
-        "Astronomy compels the soul to look upwards and leads us from this world to another"
-      </p>
 
 
     </section>

@@ -6,18 +6,18 @@ const Hero = () => {
       <div className="max-w-7xl ">
         
         {/* Heading */}
-        <h1 className="text-4xl sm:text-5xl md:text-7xl font-extrabold leading-tight uppercase">
+        <h1 className="text-4xl sm:text-5xl md:text-[80px] font-extrabold leading-tight uppercase">
           Let’s travel to the edge <br /> of space
         </h1>
 
         {/* Description */}
-        <p className="mt-2.5 text-sm sm:text-base md:text-lg text-white max-w-xl">
+        <p className="mt-2.5 text-sm sm:text-base md:text-[24px] text-white max-w-[950px]">
           We are a group that love to explore and learn new information related to our universe.
           Join us and explore.
         </p>
 
         {/* Button */}
-        <button className="mt-7.5 px-6 py-3 border border-white text-sm tracking-widest uppercase hover:bg-white hover:text-black transition">
+        <button className="h-[50px] mt-7.5 px-6 py-3 border border-white text-[14px] tracking-widest uppercase hover:bg-white hover:text-black transition">
           Discover More
         </button>
           </div>
