@@ -3,7 +3,7 @@ import { Mail, MessageCircle } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="relative w-full bg-stars text-white py-16 px-4 sm:px-6 md:px-20">
+    <footer className="relative w-full bg-stars text-white py-16 px-4 sm:px-6 md:px-20 .bg-stars-footer">
       <div className="w-full mx-auto">
 
         <p className="text-center text-[14px] sm:text-[16px] md:text-[20px] font-bold uppercase mb-10 md:mb-14">
