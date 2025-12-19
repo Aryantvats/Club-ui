@@ -1,9 +1,10 @@
 import React from "react";
 import Image from "next/image";
+import Moon from "@/components/sections/Moon";
 
 const AboutUs = () => {
   return (
-    <main className="relative min-h-screen px-4 sm:px-6 md:px-20 pt-28 md:pt-28 pb-16 text-white overflow-hidden bg-stars">
+    <main className="relative min-h-screen px-4 sm:px-6 md:px-20 pt-28 md:pt-28 pb-16 text-white  bg-stars">
       <h1 className="text-[32px] sm:text-[40px] md:text-[96px] font-extrabold uppercase mb-8 md:mb-10">
         About Us.
       </h1>
@@ -24,7 +25,14 @@ const AboutUs = () => {
             Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur.
           </p>
         </div>
-      </div>
+          </div>
+          
+        <Moon
+            bottom="-260px"
+            right="-70px"
+            size={380}
+            className=" z-50 hidden"
+        />
     </main>
   );
 };
