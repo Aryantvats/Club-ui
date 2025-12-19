@@ -9,7 +9,7 @@ const Podcasts = () => {
           P
           <span className="relative w-[40px] h-[40px] sm:w-[60px] sm:h-[60px] md:w-[160px] md:h-[160px] mx-2 md:mr-4">
             <Image
-              src="/moons/moon-podcast1.png"
+              src="/moons/moon-podcast.png"
               alt="Moon"
               fill
               className="object-cover rounded-full"
