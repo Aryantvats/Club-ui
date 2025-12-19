@@ -16,11 +16,14 @@ export default function EventInfoCard({
   description,
   position = {},
 }: EventInfoCardProps) {
+  const isAbsolute =
+    position.top || position.bottom || position.left || position.right;
+
   const shouldCenterVertically = position.top === "50%";
 
   return (
     <div
-      className={`absolute max-w-[550px] bg-white/20 backdrop-blur-md text-white p-6 ${
+      className={`${isAbsolute ? "absolute" : "relative"} max-w-[550px] bg-white/20 backdrop-blur-md text-white p-6 ${
         shouldCenterVertically ? "-translate-y-1/2" : ""
       }`}
       style={{
@@ -30,9 +33,11 @@ export default function EventInfoCard({
         right: position.right,
       }}
     >
-      <p className="text-[16px] opacity-70">{date}</p>
-      <h3 className="text-[36px] font-bold mt-2">{title}</h3>
-      <p className="text-[20px] mt-3 leading-relaxed">{description}</p>
+      <p className="text-md md:text-[16px] opacity-70">{date}</p>
+      <h3 className="text-sm md:text-[36px] font-bold mt-2">{title}</h3>
+      <p className="text-sm md:text-[20px] mt-3 leading-relaxed">
+        {description}
+      </p>
       <button className="mt-4 px-4 py-2 text-[16px] font-bold border text-black bg-white">
         Read More
       </button>

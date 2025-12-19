@@ -21,7 +21,7 @@ const Moon = ({
 }: MoonProps) => {
   return (
     <div
-      className={`hidden md:block absolute ${className}`}
+      className={` md:block absolute ${className}`}
       style={{
         top,
         right,

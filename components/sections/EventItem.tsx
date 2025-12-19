@@ -13,33 +13,40 @@ const EventItem = ({ index, image, title, date, reverse }: EventItemProps) => {
   return (
     <div className="relative">
 
+      {/* Image */}
       <div
-        className={`relative w-[880px] h-[700px] overflow-hidden ${
-          reverse ? "ml-auto" : ""
+        className={`relative w-full md:w-[880px] h-[360px] md:h-[700px] overflow-hidden ${
+          reverse ? "md:ml-auto" : ""
         }`}
       >
-        <Image
-          src={image}
-          alt={title}
-          fill
-          className="object-cover"
+        <Image src={image} alt={title} fill className="object-cover" />
+      </div>
+
+      {/* Desktop overlapping card */}
+      <div className="hidden md:block">
+        <EventInfoCard
+          title={title}
+          date={date}
+          description="Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet. Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet.Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet."
+          position={{
+            bottom: "40px",
+            ...(reverse ? { left: "160px" } : { right: "160px" }),
+          }}
         />
       </div>
 
-      <EventInfoCard
-        title={title}
-        date={date}
-        description="Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet. Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet.Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet."
-        position={{
-          bottom: "40px",
-          ...(reverse
-            ? { left: "160px" }
-            : { right: "160px" }),
-        }}
-      />
+      {/* Mobile stacked card */}
+      <div className="md:hidden mt-6">
+        <EventInfoCard
+          title={title}
+          date={date}
+          description="Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet. Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet.Lorem ipsum dolor sit amet consectetur. Augue duis etiam pulvinar duis interdum accumsan tempor bibendum amet."
+        />
+      </div>
 
+      {/* Index */}
       <span
-        className={`absolute top-0 text-[32px] font-bold ${
+        className={`absolute top-0 text-[20px] md:text-[32px] font-bold ${
           reverse ? "left-0" : "right-0"
         }`}
       >

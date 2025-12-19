@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <div >
       <Hero />
-      <Moon top="470px" right="148px" className="z-50"/>
+      <Moon top="470px" right="148px" className="z-50 hidden"/>
       <RecentEventHome
         image="/images/nebula.jpg"
         date="18/06/2023"

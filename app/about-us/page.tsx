@@ -11,9 +11,9 @@ const AboutUsPage = () => {
         top="430px"
         right="-70px"
         size={380}
-        className=" z-50"
+        className=" z-50 hidden"
       />
-      <section className="w-auto h-[600px] relative z-0">
+      <section className="w-auto h-[300px] md:h-[600px] relative z-0">
         <Image
           src="/images/group.jpg"
           alt="Community Group"
