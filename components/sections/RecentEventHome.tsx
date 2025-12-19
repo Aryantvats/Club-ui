@@ -16,17 +16,17 @@ export default function RecentEventHome({
 }: RecentEventHomeProps) {
   return (
     <section className="relative w-full py-20 bg-stars">
-      {/* Section Heading */}
+      
       <div className="max-w-7xl mx-auto px-6 ">
         <h2 className="text-white text-[32px] font-bold tracking-widest uppercase ">
           RECENT EVENTS
         </h2>
       </div>
 
-      {/* Event Container */}
+      
       <div className="relative max-w-[1300px] mx-auto px-6">
         <div className="relative h-[560px] w-full overflow-hidden">
-          {/* Background Image */}
+          
           <Image
             src={image}
             alt={title}
@@ -35,7 +35,7 @@ export default function RecentEventHome({
             priority
           />
 
-          {/* Overlay Info Card */}
+          
           <EventInfoCard
             title={title}
             date={date}

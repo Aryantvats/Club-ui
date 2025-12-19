@@ -5,7 +5,7 @@ const Podcasts = () => {
   return (
     <main className="relative px-6 md:px-20 pt-32 pb-24 text-white">
 
-      {/* Heading */}
+      
       <div className="flex items-center justify-center mb-20">
         <h1 className="text-6xl md:text-[200px] font-extrabold tracking-widest uppercase flex items-center ">
           P
@@ -21,7 +21,7 @@ const Podcasts = () => {
         </h1>
       </div>
 
-      {/* Podcast Cards */}
+      
       <div className="flex flex-col gap-10 max-w-8xl mx-auto">
         <PodcastCard src="/images/podcast1.png" />
         <PodcastCard src="/images/podcast2.png" />

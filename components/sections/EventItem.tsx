@@ -13,7 +13,6 @@ const EventItem = ({ index, image, title, date, reverse }: EventItemProps) => {
   return (
     <div className="relative">
 
-      {/* Image */}
       <div
         className={`relative w-[880px] h-[700px] overflow-hidden ${
           reverse ? "ml-auto" : ""
@@ -27,7 +26,6 @@ const EventItem = ({ index, image, title, date, reverse }: EventItemProps) => {
         />
       </div>
 
-      {/* Info Card (REPLACED) */}
       <EventInfoCard
         title={title}
         date={date}
@@ -40,7 +38,6 @@ const EventItem = ({ index, image, title, date, reverse }: EventItemProps) => {
         }}
       />
 
-      {/* Index */}
       <span
         className={`absolute top-0 text-[32px] font-bold ${
           reverse ? "left-0" : "right-0"

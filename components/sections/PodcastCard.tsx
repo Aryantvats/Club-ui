@@ -8,7 +8,6 @@ const PodcastCard = ({ src }: PodcastCardProps) => {
   return (
     <div className="relative w-full h-150 rounded-3xl overflow-hidden bg-black/60">
       
-      {/* Image */}
       <Image
         src={src}
         alt="Podcast"
@@ -19,7 +18,6 @@ const PodcastCard = ({ src }: PodcastCardProps) => {
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/40" />
 
-      {/* Badge */}
       <div className="absolute bottom-6 left-6 flex items-center gap-2 text-sm">
         <span className="opacity-70">Available on</span>
         <Image

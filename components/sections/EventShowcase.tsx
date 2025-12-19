@@ -23,12 +23,12 @@ export default function EventShowcase() {
 
   return (
     <section className="relative pt-15 bg-stars text-white overflow-hidden">
-      {/* Title */}
+      
       <h2 className="text-center tracking-[0.35em] text-[32px] font-bold mb-16 uppercase">
         What’s it like when we have events
       </h2>
 
-      {/* Carousel */}
+      
       <div className="relative h-[440px] flex items-center justify-center px-20">
         {images.map((src, index) => {
           const offset = index - active;
@@ -68,7 +68,7 @@ export default function EventShowcase() {
         })}
       </div>
 
-      {/* Controls */}
+      
       <div className="flex items-center justify-center gap-6 mt-10">
         <button
           onClick={() =>

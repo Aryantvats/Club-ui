@@ -4,14 +4,14 @@ export default function KnowMoreSection() {
   return (
     <section className="relative w-full bg-stars py-15 text-white">
       <div className="w-full mx-auto px-25">
-        {/* Small heading */}
+        
         <p className="text-center text-[32px] font-bold tracking-[0.35em] uppercase opacity-80 mb-16">
           Know more about us here
         </p>
 
-        {/* Content */}
+        
         <div className="flex items-center gap-20">
-          {/* Left: Logo */}
+          
           <div className="shrink-0">
             <Image
               src="/logos/dhruva-logo.png" 
@@ -22,7 +22,7 @@ export default function KnowMoreSection() {
             />
           </div>
 
-          {/* Right: Text */}
+          
           <div className="max-w-[970px]">
             <h2 className="text-[36px] font-semibold leading-snug mb-5 uppercase">
               We are club that learn, share and explore <br />

@@ -5,10 +5,10 @@ const RecentEvents = () => {
   return (
     <section className="relative  px-6 md:px-40">
 
-      {/* Decorative Moon */}
+      
       <Moon top="-30px" left="40px" size={360} className="z-50"/>
 
-      {/* Heading */}
+      
       <h2 className="text-center uppercase tracking-widest text-[32px] font-bold mb-16">
         Recent Events
       </h2>

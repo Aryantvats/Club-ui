@@ -5,7 +5,6 @@ const EventBanner = () => {
     <section className="px-6 md:px-20 py-24 pt-40">
       <div className="relative w-full h-[560px] rounded-2xl overflow-hidden">
         
-        {/* Background */}
         <Image
           src="/images/astronaut.jpg"
           alt="Event Banner"
@@ -17,7 +16,6 @@ const EventBanner = () => {
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/40" />
 
-        {/* Content */}
         <div className="relative z-10 h-full flex items-center px-6 md:px-16 pt-30">
           <div className="flex flex-col md:flex-row md:items-end gap-6 md:gap-10">
 
