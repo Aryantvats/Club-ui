@@ -9,23 +9,22 @@ const AboutUs = () => {
         About Us.
       </h1>
 
-      <div className="w-full flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-20 justify-center">
+      <div className="w-full flex flex-col md:flex-row items-center  gap-10 md:gap-20 justify-center">
         <div className="flex-shrink-0 flex justify-center">
           <Image
             src="/logos/dhruva-logo.png"
             alt="Dhruva Logo"
-            width={220}
-            height={240}
-            className="opacity-90"
+            width={335}
+            height={370}
           />
         </div>
 
-        <div className="text-[14px] sm:text-[15px] md:text-base text-gray-200 leading-relaxed max-w-xl md:max-w-[480px] text-center md:text-left">
+        <div className="text-[14px] sm:text-[15px] md:text-base text-gray-200 leading-relaxed max-w-xl md:max-w-[680px] text-center md:text-left">
           <p>
             Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur. Diam donec egestas est leo malesuada massa quisque vitae at. Aliquet scelerisque magna nulla aenean euismod sed. Adipiscing placerat quisque eu rhoncus consequat.Lorem ipsum dolor sit amet consectetur.
           </p>
         </div>
-          </div>
+      </div>
           
         <Moon
             bottom="-260px"
