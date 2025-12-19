@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Moon from "@/components/sections/Moon";
 
 const Hero = () => {
   return (
@@ -19,7 +20,7 @@ const Hero = () => {
         </button>
           </div>
           
-       
+       <Moon top="470px" right="148px" className="z-50 hidden"/>
     </section>
   );
 };
